@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KenKen - Welcome To My Website!</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index-style.css">
+<body>
+    <div class="page-wrapper">
+        <header class="hero">
+            <nav>
+                <a class="logo" href="/">
+                    <title>KENKEN</title>
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                        <g xmlns="http://www.w3.org/2000/svg" transform="translate(0.000000,53.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
+                            <path d="M239 363 l-54 -78 -3 49 c-2 31 -10 56 -23 70 -20 21 -21 21 -35 2 -11 -15 -14 -55 -14 -163 l0 -143 35 0 35 0 0 48 c0 35 5 54 19 66 21 19 23 17 67 -61 28 -51 31 -53 71 -53 l43 0 -55 90 c-30 50 -55 95 -55 99 0 5 25 41 56 80 l55 71 -44 0 c-44 0 -45 -1 -98 -77z"/>
+                            <path d="M415 431 c-3 -5 -3 -81 -1 -168 l5 -158 110 -3 111 -3 0 31 0 30 -75 0 -75 0 0 45 0 45 66 0 65 0 -3 28 c-3 26 -6 27 -65 30 l-63 3 0 34 0 35 75 0 75 0 0 30 0 30 -109 0 c-61 0 -112 -4 -116 -9z"/>
+                            <path d="M680 271 l0 -171 35 0 35 0 0 105 c0 58 4 105 8 105 4 0 35 -47 68 -105 56 -99 61 -105 92 -105 l32 0 0 170 0 170 -35 0 -34 0 -3 -107 -3 -108 -60 105 c-59 101 -62 105 -98 108 l-37 3 0 -170z"/>
+                            <path d="M1020 270 l0 -170 35 0 35 0 0 48 c0 36 5 54 20 67 24 21 19 25 60 -48 36 -64 44 -70 89 -65 l31 3 -56 93 -55 92 47 63 c26 34 52 68 57 75 7 9 -1 12 -34 12 -44 0 -45 -1 -94 -75 -28 -41 -53 -75 -57 -75 -5 0 -8 34 -8 75 l0 75 -35 0 -35 0 0 -170z"/>
+                            <path d="M1330 270 l0 -170 110 0 110 0 0 30 0 30 -75 0 -75 0 0 45 0 45 65 0 65 0 0 30 0 30 -65 0 -65 0 0 35 0 35 75 0 75 0 0 30 0 30 -110 0 -110 0 0 -170z"/>
+                            <path d="M1593 270 l2 -171 35 3 35 3 3 80 c5 142 1 140 67 25 59 -101 62 -105 98 -108 l37 -3 0 170 0 171 -35 0 -35 0 0 -105 c0 -58 -4 -105 -8 -105 -4 0 -35 47 -68 105 -58 103 -60 105 -96 105 l-36 0 1 -170z"/>
+                        </g>
+                    </svg>
+                </a>
+                <div class="nav-links">
+                    <a href="#Collection" class="nav-link-text" onclick="scrollToSection('collection')">My Collections</a>
+                    <a href="About" class="nav-link-text">About</a>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <h1 id="animation-text"></h1>
+                <p>Hello! Welcome to my Website! My name is Kevin, A student programmer. This is my little website that displays the stuff that im doing.</p>
+                <div class="nothing"></div>
+            </div>
+        </header>
+        <main>
+            <section class="explore" id="collection">
+                <div class="center-text">
+                    <h1>My Collections</h1>
+                    <p>Visit the stuff that I'm doing!</p>
+                </div>
+                <div class="post">
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Coming Soon</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Coming Soon</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Coming Soon</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Coming Soon</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Comming Soon</h2>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <h2>Coming Soon
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/index-script.js"></script>
+    <script>
+function scrollToSection(collection) {
+  var section = document.getElementById(collection);
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+    </script>
+</body>
+</html>

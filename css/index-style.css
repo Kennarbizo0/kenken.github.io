@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    background-image: url('https://media.istockphoto.com/id/879837678/photo/4-seasons-sunny-winter-day-outdoors-in-rural-landscape.webp?b=1&s=170667a&w=0&k=20&c=hK1NdVctBkBd5MjjmZl8YjMm2SRb_qFGFnMsc4imCDA=');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 65vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.nav-links a {
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero-content {
+    text-align: center;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.nothing {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+    background: white;
+}
+
+.center-text {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 26px;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    border: 2px solid #000; /* Add a black border */
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 100%;
+    height: 200px; /* Custom height for rectangular shape */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.box:hover {
+    height: 300px; /* Custom height when expanded */
+}
+
+.box-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-link-text:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    padding: 5px 2px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
