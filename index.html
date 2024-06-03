@@ -6,12 +6,23 @@
     <title>KenKen - Welcome To My Website!</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index-style.css">
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQVHZ4WBNL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQVHZ4WBNL');
+</script>
 <body>
     <div class="page-wrapper">
         <header class="hero">
             <nav>
                 <a class="logo" href="/">
                     <title>KENKEN</title>
+                    <!-- LOGO -->
                     <svg xmlns="http://www.w3.org/2000/svg">
                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(0.000000,53.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
                             <path d="M239 363 l-54 -78 -3 49 c-2 31 -10 56 -23 70 -20 21 -21 21 -35 2 -11 -15 -14 -55 -14 -163 l0 -143 35 0 35 0 0 48 c0 35 5 54 19 66 21 19 23 17 67 -61 28 -51 31 -53 71 -53 l43 0 -55 90 c-30 50 -55 95 -55 99 0 5 25 41 56 80 l55 71 -44 0 c-44 0 -45 -1 -98 -77z"/>
@@ -25,7 +36,7 @@
                 </a>
                 <div class="nav-links">
                     <a href="#Collection" class="nav-link-text" onclick="scrollToSection('collection')">My Collections</a>
-                    <a href="About" class="nav-link-text">About</a>
+                    <a href="#About"  onclick="scrollToSection('about')" class="nav-link-text">About</a>
                 </div>
             </nav>
             <div class="hero-content">
@@ -73,12 +84,32 @@
                     </div>
                 </div>
             </section>
+            <section class="about" id="about">
+                <div class="center-text">
+                    <h2>About</h2>
+                    <p>About This Page and Developer</p>   
+                </div>
+                <div class="about-wrapper">
+                    <section class="about-section">
+                        <h1>About Me</h1>
+                        <p>Welcome to my personal space on the web! My name is Kevin, and I'm excited to share my journey, interests, and projects with you. This website is a collection of everything I’m passionate about and involved in, providing a glimpse into my world.</p>
+                    </section>
+                </div>
+            </section>
         </main>
     </div>
     <script src="js/index-script.js"></script>
     <script>
+        //#collection
 function scrollToSection(collection) {
   var section = document.getElementById(collection);
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+
+//#about
+
+function scrollToSection(about) {
+  var section = document.getElementById(about);
   section.scrollIntoView({ behavior: 'smooth' });
 }
     </script>

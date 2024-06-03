@@ -17,6 +17,7 @@ body {
     background-image: url('https://media.istockphoto.com/id/879837678/photo/4-seasons-sunny-winter-day-outdoors-in-rural-landscape.webp?b=1&s=170667a&w=0&k=20&c=hK1NdVctBkBd5MjjmZl8YjMm2SRb_qFGFnMsc4imCDA=');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     width: 100%;
     height: 65vh;
     color: white;
@@ -118,4 +119,23 @@ main {
     padding: 5px 2px;
     border-radius: 10px;
     border: 2px solid #ffffff;
+}
+
+.about-wrapper {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    font-size: 26px;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 1000px;
+    margin-bottom: 20px;
 }
